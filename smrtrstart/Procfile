@@ -1,0 +1,2 @@
+web: gunicorn smrtstart.wsgi
+web: gunicorn smrtrstart:app
