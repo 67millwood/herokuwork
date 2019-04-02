@@ -1,1 +1,1 @@
-web: gunicorn smrtrstart/smrtrstart.wsgi
+web: gunicorn smrtrstart.wsgi
