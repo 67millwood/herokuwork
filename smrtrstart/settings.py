@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'smrtrstart.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 # for HEROKU deployment
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -100,7 +100,7 @@ DATABASES = {
         'PORT': '',
     }
 }
-
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
