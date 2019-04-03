@@ -1,3 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polls List</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/pollstyle.css' %}">
+
+  <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+
+</head>
+<body>
+
+
 <h1>This is question number: 🦄 {{ question.id }}</h1>
 <h3>{{ question.question_text }}</h3>
 
