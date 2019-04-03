@@ -1,10 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Polls List</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/pollstyle.css' %}">
+
+  <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+
+</head>
+<body>
+
 <h2>Here are your questions:</h2>
 {% if latest_question_list %}
-	<ul>
-		{% for question in latest_question_list %}
-			<li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-		{% endfor %}
-	</ul>
+  <ul>
+    {% for question in latest_question_list %}
+      <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+  </ul>
 {% else %}
-	<p>No polls are 🐳</p>
+  <p>No polls are 🐳</p>
 {% endif %}
+
+</body>
+</html>
+
+
