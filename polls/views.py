@@ -40,5 +40,5 @@ def vote(request, question_id):
 		return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
 def home(request):
-	return HttpResponse("🐋 Welcome to the bus.")
+	return render(request, 'polls/home.html')
 
