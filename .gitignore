@@ -1,1 +1,3 @@
+# Django files
+__pycache__/
 *.pyc
